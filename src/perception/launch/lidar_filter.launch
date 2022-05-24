@@ -1,0 +1,4 @@
+<launch>
+    <node name="lidar_filter_node" pkg="lidar_filter" type="lidar_filter" output="screen">
+    </node>
+</launch>

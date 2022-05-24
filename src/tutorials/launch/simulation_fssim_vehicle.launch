@@ -1,0 +1,13 @@
+<launch>
+  <arg name="x_pos" default="0.0"/>
+  <arg name="y_pos" default="0.0"/>
+  <arg name="z_pos" default="0.0"/>
+  <param name="/use_sim_time" value="true" />  
+  
+  <include file="$(find tutorials)/launch/gazebo_world.launch"/>
+
+  <include file="$(find fssim_description)/launch/vehicle_model.launch"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+</launch>

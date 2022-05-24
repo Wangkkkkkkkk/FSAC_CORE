@@ -1,0 +1,4 @@
+<launch>
+    <node name="loam_localization_node" pkg="loam" type="loam" output="screen">
+    </node>
+</launch>
